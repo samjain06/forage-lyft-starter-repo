@@ -1,10 +1,10 @@
-from datetime import datetime
 from interface_battery import Battery
+from datetime import date
 
 
 class SpindlerBattery(Battery):
 
-    def __init__(self, current_date: datetime, last_service_date: datetime):
+    def __init__(self, current_date: date, last_service_date: date):
         self.current_date = current_date
         self.last_service_date = last_service_date
 
