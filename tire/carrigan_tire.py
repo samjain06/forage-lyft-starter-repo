@@ -10,3 +10,4 @@ class CarriganTire(Tire):
         for wear in self.tire_wear:
             if wear >= 0.9:
                 return True
+        return False

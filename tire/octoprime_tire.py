@@ -7,5 +7,4 @@ class OctoprimeTire(Tire):
         self.tire_wear = tire_wear
 
     def needs_service(self) -> bool:
-        if sum(self.tire_wear) >= 3:
-            return True
+        return sum(self.tire_wear) >= 3
