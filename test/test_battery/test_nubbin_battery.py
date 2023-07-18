@@ -4,14 +4,14 @@ from datetime import datetime
 from battery.nubbin_battery import NubbinBattery
 
 class TestBattery(unittest.TestCase):
-    def test_nubbin_should_be_serviced(self):
+    def test_nubbin_service_true(self):
         today = datetime.today().date()
         last_service_date = today.replace(year=today.year - 5)
 
         battery = NubbinBattery(today, last_service_date)
         self.assertTrue(battery.needs_service())
 
-    def test_nubbin_should_not_be_serviced(self):
+    def test_nubbin_service_false(self):
         today = datetime.today().date()
         last_service_date = today.replace(year=today.year - 1)
 
