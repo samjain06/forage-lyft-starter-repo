@@ -1,4 +1,4 @@
-from interface_engine import Engine
+from .interface_engine import Engine
 
 
 class SternmanEngine(Engine):

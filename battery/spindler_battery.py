@@ -1,4 +1,4 @@
-from interface_battery import Battery
+from .interface_battery import Battery
 from datetime import date
 
 
